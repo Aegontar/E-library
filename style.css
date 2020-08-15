@@ -1,0 +1,787 @@
+* {
+overflow-x: hidden;
+
+margin: 0;
+
+padding: 0;
+
+}
+
+#meet-the-team p{
+
+display: none;
+
+}
+
+#division-1 {
+
+width: 100%;
+height: 2789px;
+background-color: lightyellow;
+background-image: url(images/background1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+overflow-y: hidden;
+
+}
+
+
+#nav-bar {
+
+font-size: 15px;
+display: flex;
+margin-left: 35%;
+margin-right: 5%;
+
+
+
+}
+
+#nav-bar > div {
+
+color: white;
+margin: 0 0 0 50px;
+border-right: 2px solid lightblue; 
+padding-right: 10px;
+
+
+}
+
+
+#login-div {
+
+    width: 100%;
+    height: 150px;
+
+}
+
+#login-div h1 {
+
+color: white;
+position: relative;
+top: 50px;
+left: 400px;
+
+}
+
+#welcome p {
+
+
+float: right;
+margin: 0 630px 0 0;
+
+}
+
+#welcome hr {
+    
+    
+    border: none; 
+    
+    height: 3px;
+    color: white; 
+    background-color: white;
+    float: left;
+    width: 320px;
+    margin: 40px 0 0 500px;
+}
+
+
+
+#welcome p {
+
+ font-size: 35px;
+ color: white;
+ margin-top: 20px;
+ text-align: center;
+
+}
+
+
+#slide-show {
+height: 610px;
+width: 980px;
+margin: 50px auto;
+}
+
+#slide-show img {
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+
+#featured-publications {
+
+display: flex;
+justify-content: center;
+
+}
+
+
+#featured-publications hr{
+
+    border: none; 
+    
+    height: 3px;
+    color: white; 
+    background-color: white;
+    width: 320px;
+    margin-top: 10px;
+    
+    
+}
+
+#featured-publications p {
+
+color: white;
+font-size: 150%;
+margin-left: 50px;
+margin-right: 50px;
+
+}
+
+#view-more {
+
+display: flex;
+justify-content: center;
+margin-top: 70px;
+
+}
+
+#view-more div:nth-child(1) {
+
+height: 388px;
+width: 311px;    
+background-color: thistle;
+margin-right: 30px;
+background-image: url(images/publication1.jpg);
+background-size: cover;
+
+}
+
+#view-more div:nth-child(2) {
+
+    height: 388px;
+    width: 311px;    
+    background-color: goldenrod;
+    background-image: url(images/publication2.jpg);
+    background-size: cover;
+
+
+    }
+
+
+    #view-more div:nth-child(3) {
+
+        height: 388px;
+        width: 311px;    
+        background-color: thistle;
+        margin-left: 30px;
+        background-image: url(images/publication3.jpg);
+        background-size: cover;
+
+        }
+
+
+
+
+
+        #view-more2 {
+
+            display: flex;
+            justify-content: center;
+            color: white;
+            text-align: center;
+
+            
+            }
+            
+            #view-more2 div:nth-child(1) {
+            
+            height: 388px;
+            width: 311px;    
+            background-color: rgba(255, 255, 255, .1);
+           
+            margin-right: 30px;
+       ;
+            
+            }
+            
+            #view-more2 div:nth-child(2) {
+            
+                height: 388px;
+                width: 311px;    
+                background-color: rgba(255, 255, 255, .1);
+                
+             
+            
+            
+                }
+            
+            
+                #view-more2 div:nth-child(3) {
+            
+                    height: 388px;
+                    width: 311px;    
+                    background-color: rgba(255, 255, 255, .1);
+                    margin-left: 30px;
+                   
+            
+                    }
+#view-more2 p {
+
+margin: 50px 15px 0 15px;
+font-family: 'Niconne', cursive;
+font-size: 150%;
+
+}
+
+#view-more2 h1 {
+
+    margin-top: 50px;
+
+}
+
+
+#meet-the-team {
+
+
+height: 700px;
+background-color: rgba(76,68,70,0.9);
+margin-top: 100px;
+text-align: center;
+
+}
+
+#meet-the-team img {
+
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-left: 100px;
+    margin-left: 100px; 
+    margin-top: 250px;
+}
+
+#team-member {
+
+display: flex;
+justify-content: center;
+overflow-y: hidden;
+
+}
+
+#meet-the-team h1{
+
+    font-size: 300%;
+    color: white;
+    margin-top: 70px;
+
+    }
+
+    #footer {
+
+    background-color: white;
+    color: #2E302F;
+    height: 100%;
+
+    }
+
+    #footer p {
+
+    text-align: center;
+    margin-top: 150px;
+
+    }
+
+    #team-name {
+
+   display: flex;
+   justify-content: center;
+
+    }
+
+    #team-name p {
+
+
+        color: white;
+        font-size: 200%;
+
+    }
+
+    /* It was hard to fix the margines with the above call so I did that seperately */
+
+    #team-name p:nth-child(1) {
+    position: relative;
+    right: 130px;
+ }
+
+    #team-name p:nth-child(2) {
+     position: relative;
+     left: 40px;   
+    }
+
+    #team-name p:nth-child(3) {
+    position: relative;
+    left: 230px;
+  }
+
+
+    /* This is the responsive portion */
+
+
+    @media (max-width: 1202px) {
+
+        #nav-bar {
+            font-size: 15px;
+            display: flex;
+            margin-left: 35%;
+            margin-right: 5%;
+           }
+            
+            #nav-bar > div {
+            color: white;
+            margin: 0 5px 0 5px;
+            border-right: 2px solid lightblue; 
+            }
+
+            #welcome p {
+           
+                float: right;
+                margin: 3% 25% 10px 5%;
+
+                top: 15px;   
+                overflow-y: hidden;  
+            }
+                
+            #welcome hr {
+
+            display: none;   
+            border: none; 
+            height: 3px;
+            color: white; 
+            background-color: white;
+            float: left;
+            width: 320px;
+            margin: 40px 0 0 500px;
+                   
+        }
+
+
+                #slide-show {
+                    height: 650px;
+                    width: 980px;
+                    margin: 20px auto;
+                    }
+
+                 #meet-the-team img {
+                        border-radius: 50%;
+                        height: 200px;
+                        width: 200px;
+                        margin-left: 20px;
+                        margin-top: 250px;
+                    }
+
+
+                    #team-name p:nth-child(1) {
+                        position: relative;
+                        right: 90px;
+                     }
+                    
+                        #team-name p:nth-child(2) {
+                         position: relative;
+                         left: 10px;   
+                        }
+                    
+                        #team-name p:nth-child(3) {
+                        position: relative;
+                        left: 100px;
+                      }
+
+
+                      #footer p {
+                        text-align: center;
+                        margin-top: 0px;
+                    }
+
+}
+
+
+@media (max-width: 1002px) {
+
+#nav-bar {
+    font-size: 15px;
+    display: flex;
+    margin-left: 25%;
+    margin-right: 10%;
+       }    
+
+#featured-publications hr{
+    display: none;
+    border: none; 
+    height: 3px;
+    color: white; 
+    background-color: white;
+    width: 320px;
+    margin-top: 10px;
+        
+}
+    
+    #featured-publications p {
+    
+    color: white;
+    font-size: 150%;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    }
+
+}
+
+@media (max-width: 916px) {
+
+
+    #slide-show {
+        height: 600px;
+        width: 800px;
+        margin: 50px auto;
+        overflow-y: hidden;
+       }
+
+       #login-div h1 {
+
+        color: white;
+        position: relative;
+        top: 50px;
+        left: 0px;
+        text-align: center;
+        
+
+        }
+
+
+}
+
+
+
+@media (max-width: 800px) {
+
+
+    #slide-show {
+        height: 500px;
+        width: 600px;
+        margin: 50px auto;
+        
+       }
+
+       #slide-show img{
+        min-width: 100%;
+        min-height: 100%
+       }
+
+}
+
+
+
+@media (max-width: 800px) {
+
+    #nav-bar {
+        font-size: 15px;
+        display: flex;
+        margin-left: 15%;
+        margin-right: 10%;
+           }   
+
+     
+           #login-div h1 {
+
+            color: white;
+            position: relative;
+            top: 50px;
+            left: 0px;
+            text-align: center;
+            
+
+            }
+
+}
+
+
+@media (max-width: 607px) {
+            
+    #nav-bar {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 30%;
+        margin-left: 30%;
+
+           } 
+
+}
+
+
+@media (max-width: 607px) {
+
+
+
+
+    #nav-bar > div {
+
+        color: white;
+        margin: 0 0 0 0px;
+        margin-top: 5px;
+        padding-right: 0px;
+        margin-left: 5%;
+        margin-right: 5%;
+        }
+    
+    
+        #slide-show {
+            height: 40vh;
+            width: 60vh;
+           
+          }
+
+@media (max-width: 463px) {
+
+
+    #division-1 {
+
+        width: 100%;
+        height: 3015px;
+        background-color: lightyellow;
+        background-image: url(images/background1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow-y: hidden;
+        
+        }
+
+
+
+    #slide-show {
+        height: 30vh;
+        width: 50vh;
+        margin: 50px auto;
+
+}
+
+
+
+#view-more {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-right: 2px;
+    margin: 2px auto;
+    
+    }
+
+
+
+    #view-more div:nth-child(1) {
+
+        height: 388px;
+        width: 311px;    
+        background-color: thistle;
+        margin: 5px auto;
+        background-image: url(images/publication1.jpg);
+        background-size: cover;
+        
+        }
+        
+        #view-more div:nth-child(2) {
+        
+            height: 388px;
+            margin: 5px auto;   
+            background-color: goldenrod;
+            background-image: url(images/publication2.jpg);
+            background-size: cover;
+        
+        
+            }
+        
+        
+            #view-more div:nth-child(3) {
+        
+                height: 388px;
+                width: 311px;    
+                background-color: thistle;
+                margin: 5px auto;
+                background-image: url(images/publication3.jpg);
+                background-size: cover;
+        
+                }
+
+
+
+                #view-more2 {
+
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    color: white;
+                    text-align: center;
+                    position: relative;
+                    bottom: 1200px;
+        
+                    
+                    }
+                    
+                    #view-more2 div:nth-child(1) {
+                    
+                    height: 388px;
+                    width: 311px;    
+                    background-color: rgba(255, 255, 255, .1);
+                   margin: 5px auto;
+               
+                    
+                    }
+                    
+                    #view-more2 div:nth-child(2) {
+                    
+                        height: 388px;
+                        width: 311px;    
+                        background-color: rgba(255, 255, 255, .1);
+                        margin: 5px auto;
+
+                     
+                    
+                    
+                        }
+                    
+                    
+                        #view-more2 div:nth-child(3) {
+                    
+                            height: 388px;
+                            width: 311px;    
+                            background-color: rgba(255, 255, 255, .1);
+                            margin: 5px auto;
+
+                           
+                    
+                            }
+        #view-more2 p {
+        
+        margin: 50px 15px 0 15px;
+        font-family: 'Niconne', cursive;
+        font-size: 150%;
+        
+        }
+        
+        #view-more2 h1 {
+        
+            margin-top: 50px;
+        
+        }
+        
+
+        #meet-the-team {
+
+
+            height: 1000px;
+            background-color: rgba(76,68,70,0.9);
+            margin-top: 0;
+            text-align: center;
+            position: relative;
+            bottom: 1200px;
+            overflow: hidden;
+            
+            }
+
+
+            #meet-the-team img {
+
+                border-radius: 50%;
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto; 
+                margin-top: 50px;
+                
+               
+            }
+            
+            #team-member {
+            
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            overflow-y: hidden;
+            
+            
+            }
+            
+            #meet-the-team h1{
+            
+                font-size: 300%;
+                color: white;
+                margin-top: 10px;
+            
+                }
+            
+                #team-name {
+               
+
+                    display: none;
+
+                }
+                       
+
+                          #meet-the-team p{
+                            
+                            display: block;
+                            color: white;
+                            font-size: 200%;
+                            margin-top: 2vh;
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            }
+
+
+                            #footer {
+
+                                background-color: white;
+                                color: #606060;
+                                height: 100px;
+                                margin: 0 0;
+                                position: relative;
+                                bottom: 1200px;
+                            
+                                }
+                            
+                                #footer p {
+                                margin-top: 5vh;
+                                text-align: center;
+                                font-weight: 1000;
+                                font-size: 120%;
+                            
+                                }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
