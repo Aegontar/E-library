@@ -284,15 +284,18 @@ overflow-y: hidden;
     #footer {
 
     background-color: white;
-    color: #2E302F;
-    height: 100%;
+    color:  #606060;
+    height: 60vh;
 
     }
 
     #footer p {
 
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
+    font-weight: 1000;
+    font-size: 120%;
+    
 
     }
 
@@ -308,6 +311,7 @@ overflow-y: hidden;
 
         color: white;
         font-size: 200%;
+
 
     }
 
@@ -765,18 +769,7 @@ overflow-y: hidden;
                             
                                 }
 
-
-
-
-
-
 }
-
-
-
-
-
-
 
 
 }
