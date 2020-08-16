@@ -7,9 +7,15 @@ padding: 0;
 
 }
 
+#team-member p {
+
+    display: none;
+
+}
+
 #meet-the-team p{
 
-display: none;
+
 
 }
 
