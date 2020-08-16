@@ -1,26 +1,40 @@
 * {
 overflow-x: hidden;
-
 margin: 0;
-
 padding: 0;
-
 }
 
 #team-member p {
-
-    display: none;
-
+display: none;
 }
 
 #meet-the-team p{
-
-
-
+display: block;
 }
 
-#division-1 {
+/* dropdown stuff */
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: burlywood;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  /* dropdown stuff */
+
+#division-1 {
 width: 100%;
 height: 2789px;
 background-color: lightyellow;
@@ -29,80 +43,58 @@ background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
 overflow-y: hidden;
-
 }
 
 
 #nav-bar {
-
 font-size: 15px;
 display: flex;
 margin-left: 35%;
 margin-right: 5%;
-
-
-
 }
 
 #nav-bar > div {
-
 color: white;
 margin: 0 0 0 50px;
 border-right: 2px solid lightblue; 
 padding-right: 10px;
-
-
 }
 
 
 #login-div {
-
-    width: 100%;
-    height: 150px;
-
+width: 100%;
+height: 150px;
 }
 
 #login-div h1 {
-
 color: white;
 position: relative;
 top: 50px;
 left: 400px;
-
 }
 
 #welcome p {
-
-
 float: right;
 margin: 0 630px 0 0;
-
 }
 
 #welcome hr {
-    
-    
-    border: none; 
-    
-    height: 3px;
-    color: white; 
-    background-color: white;
-    float: left;
-    width: 320px;
-    margin: 40px 0 0 500px;
+border: none; 
+height: 3px;
+color: white; 
+background-color: white;
+float: left;
+width: 320px;
+margin: 40px 0 0 500px;
 }
-
 
 
 #welcome p {
-
- font-size: 35px;
- color: white;
- margin-top: 20px;
- text-align: center;
-
+font-size: 35px;
+color: white;
+margin-top: 20px;
+text-align: center;
 }
-
 
 #slide-show {
 height: 610px;
@@ -111,280 +103,211 @@ margin: 50px auto;
 }
 
 #slide-show img {
-
-    max-width: 100%;
-    max-height: 100%;
-
+max-width: 100%;
+max-height: 100%;
 }
-
 
 #featured-publications {
-
 display: flex;
 justify-content: center;
-
 }
 
-
 #featured-publications hr{
-
-    border: none; 
-    
-    height: 3px;
-    color: white; 
-    background-color: white;
-    width: 320px;
-    margin-top: 10px;
-    
-    
+border: none; 
+height: 3px;
+color: white; 
+background-color: white;
+width: 320px;
+margin-top: 10px;
 }
 
 #featured-publications p {
-
 color: white;
 font-size: 150%;
 margin-left: 50px;
 margin-right: 50px;
-
 }
 
 #view-more {
-
 display: flex;
 justify-content: center;
 margin-top: 70px;
-
 }
 
 #view-more div:nth-child(1) {
-
 height: 388px;
 width: 311px;    
 background-color: thistle;
 margin-right: 30px;
 background-image: url(images/publication1.jpg);
 background-size: cover;
-
 }
 
 #view-more div:nth-child(2) {
+height: 388px;
+width: 311px;    
+background-color: goldenrod;
+background-image: url(images/publication2.jpg);
+background-size: cover;
+}
 
-    height: 388px;
-    width: 311px;    
-    background-color: goldenrod;
-    background-image: url(images/publication2.jpg);
-    background-size: cover;
+#view-more div:nth-child(3) {
+height: 388px;
+width: 311px;    
+background-color: thistle;
+margin-left: 30px;
+background-image: url(images/publication3.jpg);
+background-size: cover;
+}
 
+#view-more2 {
+display: flex;
+justify-content: center;
+color: white;
+text-align: center;
+}
 
-    }
-
-
-    #view-more div:nth-child(3) {
-
-        height: 388px;
-        width: 311px;    
-        background-color: thistle;
-        margin-left: 30px;
-        background-image: url(images/publication3.jpg);
-        background-size: cover;
-
-        }
-
-
-
-
-
-        #view-more2 {
-
-            display: flex;
-            justify-content: center;
-            color: white;
-            text-align: center;
-
+#view-more2 div:nth-child(1) {
+height: 388px;
+width: 311px;    
+background-color: rgba(255, 255, 255, .1);
+margin-right: 30px;
+ }
             
-            }
+#view-more2 div:nth-child(2) {
+height: 388px;
+width: 311px;    
+background-color: rgba(255, 255, 255, .1);
+}
             
-            #view-more2 div:nth-child(1) {
-            
-            height: 388px;
-            width: 311px;    
-            background-color: rgba(255, 255, 255, .1);
-           
-            margin-right: 30px;
-       ;
-            
-            }
-            
-            #view-more2 div:nth-child(2) {
-            
-                height: 388px;
-                width: 311px;    
-                background-color: rgba(255, 255, 255, .1);
-                
-             
-            
-            
-                }
-            
-            
-                #view-more2 div:nth-child(3) {
-            
-                    height: 388px;
-                    width: 311px;    
-                    background-color: rgba(255, 255, 255, .1);
-                    margin-left: 30px;
+#view-more2 div:nth-child(3) {
+height: 388px;
+width: 311px;    
+background-color: rgba(255, 255, 255, .1);
+margin-left: 30px;
                    
             
                     }
 #view-more2 p {
-
 margin: 50px 15px 0 15px;
 font-family: 'Niconne', cursive;
 font-size: 150%;
-
 }
 
 #view-more2 h1 {
-
-    margin-top: 50px;
-
+margin-top: 50px;
 }
 
 
 #meet-the-team {
-
-
 height: 700px;
 background-color: rgba(76,68,70,0.9);
 margin-top: 100px;
 text-align: center;
-
 }
 
 #meet-the-team img {
-
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    margin-left: 100px;
-    margin-left: 100px; 
-    margin-top: 250px;
+border-radius: 50%;
+height: 200px;
+width: 200px;
+margin-left: 100px;
+margin-left: 100px; 
+margin-top: 250px;
 }
 
 #team-member {
-
 display: flex;
 justify-content: center;
 overflow-y: hidden;
-
 }
 
 #meet-the-team h1{
+font-size: 300%;
+color: white;
+margin-top: 70px;
+}
 
-    font-size: 300%;
-    color: white;
-    margin-top: 70px;
+#footer {
+background-color: white;
+color:  #606060;
+height: 60vh;
+}
 
-    }
+#footer p {
+text-align: center;
+margin-top: 100px;
+font-weight: 1000;
+font-size: 120%;
+}
 
-    #footer {
+#team-name {
+display: flex;
+justify-content: center;
+}
 
-    background-color: white;
-    color:  #606060;
-    height: 60vh;
+#team-name p {
+color: white;
+font-size: 200%;
+}
 
-    }
+/* It was hard to fix the margines with the above call so I did that seperately */
 
-    #footer p {
-
-    text-align: center;
-    margin-top: 100px;
-    font-weight: 1000;
-    font-size: 120%;
-    
-
-    }
-
-    #team-name {
-
-   display: flex;
-   justify-content: center;
-
-    }
-
-    #team-name p {
-
-
-        color: white;
-        font-size: 200%;
-
-
-    }
-
-    /* It was hard to fix the margines with the above call so I did that seperately */
-
-    #team-name p:nth-child(1) {
-    position: relative;
-    right: 130px;
+#team-name p:nth-child(1) {
+position: relative;
+right: 130px;
  }
 
-    #team-name p:nth-child(2) {
-     position: relative;
-     left: 40px;   
-    }
+#team-name p:nth-child(2) {
+position: relative;
+left: 40px;   
+}
 
-    #team-name p:nth-child(3) {
-    position: relative;
-    left: 230px;
-  }
-
-
-    /* This is the responsive portion */
+#team-name p:nth-child(3) {
+position: relative;
+left: 230px;
+}
 
 
-    @media (max-width: 1202px) {
+/* This is the responsive portion */
 
-        #nav-bar {
-            font-size: 15px;
-            display: flex;
-            margin-left: 35%;
-            margin-right: 5%;
-           }
+@media (max-width: 1202px) {
+
+#nav-bar {
+font-size: 15px;
+display: flex;
+margin-left: 35%;
+margin-right: 5%;
+}
             
-            #nav-bar > div {
-            color: white;
-            margin: 0 5px 0 5px;
-            border-right: 2px solid lightblue; 
-            }
+#nav-bar > div {
+color: white;
+margin: 0 5px 0 5px;
+border-right: 2px solid lightblue; 
+}
 
-            #welcome p {
-           
-                float: right;
-                margin: 3% 25% 10px 5%;
-
-                top: 15px;   
-                overflow-y: hidden;  
-            }
+#welcome p {
+float: right;
+margin: 3% 25% 10px 5%;
+top: 15px;   
+overflow-y: hidden;  
+}
                 
-            #welcome hr {
+#welcome hr {
+display: none;   
+border: none; 
+height: 3px;
+color: white; 
+background-color: white;
+float: left;
+width: 320px;
+margin: 40px 0 0 500px;
+}
 
-            display: none;   
-            border: none; 
-            height: 3px;
-            color: white; 
-            background-color: white;
-            float: left;
-            width: 320px;
-            margin: 40px 0 0 500px;
-                   
-        }
-
-
-                #slide-show {
-                    height: 650px;
-                    width: 980px;
-                    margin: 20px auto;
-                    }
+#slide-show {
+height: 650px;
+width: 980px;
+margin: 20px auto;
+}
 
                  #meet-the-team img {
                         border-radius: 50%;
@@ -781,6 +704,20 @@ overflow-y: hidden;
 }
 
 
+/* This is for the category page */
 
+
+#category-container {
+
+width: 100%;
+height: 100vh;
+background-image: url(images/categorywallpaper.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+overflow-y: hidden;
+
+
+}
 
 
