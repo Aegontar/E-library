@@ -1,0 +1,182 @@
+
+/* This is for the category page */
+h1 {
+text-align: center;
+color: wheat;
+margin-top: 1em;
+}
+
+* {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    }
+    
+#page-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/categorywallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#category-container {
+display: grid;
+grid-template-columns: 300px 300px 300px 300px 300px;
+grid-template-rows: 200px 200px 200px 200px 200px 200px;
+grid-gap: 40px 40px;
+height: 100vh;
+width: 100vw;
+margin-top: 5%;
+justify-content: center;
+}
+
+.category {
+background-color: teal;
+}
+
+#category-container  div:nth-child(1) { 
+background-image: url(category/garden.jpg);
+background-size: cover;
+background-position: center;
+box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+}
+
+#category-container  div:nth-child(2) { 
+background-image: url(category/math.jpg);
+background-size: cover;
+background-position: center;
+box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+}
+
+
+#category-container  div:nth-child(3) { 
+background-image: url(category/light-bulb.jpg);
+background-size: cover;
+background-position: center;
+box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+}
+
+
+#category-container  div:nth-child(4) { 
+    background-image: url(category/religion.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    }
+
+#category-container  div:nth-child(5) { 
+    background-image: url(category/science.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    }
+
+#category-container  div:nth-child(6) { 
+    background-image: url(category/selfhelp.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    }
+
+#category-container  div:nth-child(7) { 
+    background-image: url(category/sports.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    }
+
+#category-container  div:nth-child(8) { 
+    background-image: url(category/travel.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    }
+
+
+
+    /* less than 1665 */
+
+@media (max-width: 1665px) {
+
+    #category-container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px;
+        grid-template-rows: 200px 200px;
+        grid-gap: 40px 40px;
+        height: 100vh;
+        width: 100vw;
+        margin-top: 5%;
+        justify-content: center;
+        }
+}
+
+
+/* less than 1322 */
+
+@media (max-width: 1322px) {
+
+
+    #page-container {
+        width: 100%;
+        height: 120vh;
+        background-image: url(images/categorywallpaper.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+
+    #category-container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-gap: 40px 40px;
+        height: 100vh;
+        width: 100vw;
+        margin-top: 5%;
+        justify-content: center;
+        }
+}
+
+/* less than 982 */
+
+@media (max-width: 982px) {
+
+    #category-container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-gap: 40px 40px;
+        height: 150vh;
+        width: 100vw;
+        margin-top: 5%;
+        justify-content: center;
+        }
+}
+
+/* less than 618*/
+
+@media (max-width: 618px) {
+    
+    #page-container {
+        width: 100%;
+        height: 220vh;
+        background-image: url(images/categorywallpaper.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #category-container {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
+        grid-gap: 40px 40px;
+        height: 220vh;
+        width: 100vw;
+        margin-top: 5%;
+        justify-content: center;
+        }
+}

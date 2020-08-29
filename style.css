@@ -704,20 +704,4 @@ margin: 20px auto;
 }
 
 
-/* This is for the category page */
-
-
-#category-container {
-
-width: 100%;
-height: 100vh;
-background-image: url(images/categorywallpaper.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-overflow-y: hidden;
-
-
-}
-
 
