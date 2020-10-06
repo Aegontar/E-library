@@ -36,7 +36,7 @@ display: block;
 
 #division-1 {
 width: 100%;
-height: 2789px;
+height: 2500px;
 background-color: lightyellow;
 background-image: url(images/background1.jpg);
 background-repeat: no-repeat;
@@ -49,18 +49,30 @@ overflow-y: hidden;
 #nav-bar {
 font-size: 15px;
 display: flex;
-margin-left: 35%;
-margin-right: 5%;
+margin-left: 30vw;
+margin-right: 30vw;
 }
 
 #nav-bar > div {
 color: white;
-margin: 0 0 0 50px;
 border-right: 2px solid lightblue; 
-padding-right: 10px;
+padding-right: 5px;
+width: 150px;
+height: 30px;
+text-align: right;
+overflow-y: hidden;
 }
 
+#nav-bar > div:nth-child(5){
+width: 100px;
+height: 30px;
+}
 
+#nav-bar > div:nth-child(1){
+width: 100px;
+height: 30px;
+}
+    
 #login-div {
 width: 100%;
 height: 150px;
@@ -70,12 +82,19 @@ height: 150px;
 color: white;
 position: relative;
 top: 50px;
-left: 400px;
+text-align: center;
+}
+
+#welcome {
+display: block;
+width: 980px;
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
 }
 
 #welcome p {
 float: right;
-margin: 0 630px 0 0;
 }
 
 #welcome hr {
@@ -85,7 +104,8 @@ color: white;
 background-color: white;
 float: left;
 width: 320px;
-margin: 40px 0 0 500px;
+margin-top: 40px;
+margin-bottom: auto;
 }
 
 
@@ -138,9 +158,10 @@ margin-top: 70px;
 height: 388px;
 width: 311px;    
 background-color: thistle;
-margin-right: 30px;
+
 background-image: url(images/publication1.jpg);
 background-size: cover;
+box-shadow:inset 0 0 0 200px rgba(0, 0, 0, 0.6);
 }
 
 #view-more div:nth-child(2) {
@@ -149,53 +170,52 @@ width: 311px;
 background-color: goldenrod;
 background-image: url(images/publication2.jpg);
 background-size: cover;
+box-shadow:inset 0 0 0 200px rgba(0, 0, 0, 0.6);
 }
 
 #view-more div:nth-child(3) {
 height: 388px;
 width: 311px;    
 background-color: thistle;
-margin-left: 30px;
 background-image: url(images/publication3.jpg);
 background-size: cover;
+box-shadow:inset 0 0 0 200px rgba(0, 0, 0, 0.6);
 }
 
-#view-more2 {
-display: flex;
-justify-content: center;
+.view-more-text {
 color: white;
 text-align: center;
-}
-
-#view-more2 div:nth-child(1) {
 height: 388px;
 width: 311px;    
-background-color: rgba(255, 255, 255, .1);
-margin-right: 30px;
- }
-            
-#view-more2 div:nth-child(2) {
-height: 388px;
-width: 311px;    
-background-color: rgba(255, 255, 255, .1);
-}
-            
-#view-more2 div:nth-child(3) {
-height: 388px;
-width: 311px;    
-background-color: rgba(255, 255, 255, .1);
-margin-left: 30px;
-                   
-            
-                    }
-#view-more2 p {
 margin: 50px 15px 0 15px;
 font-family: 'Niconne', cursive;
 font-size: 150%;
 }
 
-#view-more2 h1 {
-margin-top: 50px;
+
+.img-div {
+ margin-left: 20px;    
+ margin-right: 20px; 
+}
+
+/* making view more responsive */
+
+@media (max-width: 750px) {
+
+    .view-more-text {
+width: 430px;
+margin: 50px 0 0 0;
+}
+
+    #view-more {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        width: 100vw;
+        height: 1200px;
+        }
 }
 
 
@@ -210,8 +230,6 @@ text-align: center;
 border-radius: 50%;
 height: 200px;
 width: 200px;
-margin-left: 100px;
-margin-left: 100px; 
 margin-top: 250px;
 }
 
@@ -230,7 +248,7 @@ margin-top: 70px;
 #footer {
 background-color: white;
 color:  #606060;
-height: 60vh;
+height: 200px;
 }
 
 #footer p {
@@ -272,12 +290,19 @@ left: 230px;
 
 @media (max-width: 1202px) {
 
-#nav-bar {
-font-size: 15px;
-display: flex;
-margin-left: 35%;
-margin-right: 5%;
+#Welcome {
+width: 100vw;    
 }
+
+#nav-bar {
+    font-size: 15px;
+    display: flex;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    }
+
+
+
             
 #nav-bar > div {
 color: white;
@@ -285,11 +310,37 @@ margin: 0 5px 0 5px;
 border-right: 2px solid lightblue; 
 }
 
+
+#nav-bar > div {
+    color: white;
+    border-right: 2px solid lightblue; 
+    padding-right: 5px;
+    width: 150px;
+    height: 30px;
+    text-align: right;
+    }
+    
+    #nav-bar > div:nth-child(5){
+    width: 100px;
+    height: 30px;
+    }
+    
+    #nav-bar > div:nth-child(1){
+    width: 100px;
+    height: 30px;
+    }
+
+
+
 #welcome p {
-float: right;
-margin: 3% 25% 10px 5%;
+/*  margin-left: 20vw;
+margin-right: 20vw; 
+display: block; */
+
+margin: 0 auto;
 top: 15px;   
 overflow-y: hidden;  
+float: none;
 }
                 
 #welcome hr {
@@ -336,7 +387,7 @@ margin: 20px auto;
 
                       #footer p {
                         text-align: center;
-                        margin-top: 0px;
+                        margin-top: 50px;
                     }
 
 }
@@ -375,6 +426,19 @@ margin: 20px auto;
 
 @media (max-width: 916px) {
 
+    #welcome p {
+        /*  margin-left: 20vw;
+        margin-right: 20vw; 
+        display: block; */
+        width: 100%;
+        margin: 0 auto;
+        top: 15px;   
+        overflow-y: hidden;  
+        }
+
+        #welcome {
+            width: 100%;    
+            }
 
     #slide-show {
         height: 600px;
@@ -384,14 +448,11 @@ margin: 20px auto;
        }
 
        #login-div h1 {
-
         color: white;
         position: relative;
         top: 50px;
-        left: 0px;
         text-align: center;
-        
-
+        margin: 0 0 0 0;
         }
 
 
@@ -400,6 +461,14 @@ margin: 20px auto;
 
 
 @media (max-width: 800px) {
+
+    #login-div h1 {
+        color: white;
+        position: relative;
+        top: 50px;
+        text-align: center;
+        margin: 0 0 0 0;
+       }
 
 
     #slide-show {
@@ -413,6 +482,10 @@ margin: 20px auto;
         min-width: 100%;
         min-height: 100%
        }
+
+       #Welcome {
+        width: 100vw;    
+        }
 
 }
 
@@ -431,11 +504,7 @@ margin: 20px auto;
            #login-div h1 {
 
             color: white;
-            position: relative;
-            top: 50px;
-            left: 0px;
-            text-align: center;
-            
+            margin: 0 0 0 0;
 
             }
 
@@ -484,7 +553,7 @@ margin: 20px auto;
     #division-1 {
 
         width: 100%;
-        height: 3015px;
+        height: 3215px;
         background-color: lightyellow;
         background-image: url(images/background1.jpg);
         background-repeat: no-repeat;
@@ -622,8 +691,7 @@ margin: 20px auto;
             background-color: rgba(76,68,70,0.9);
             margin-top: 0;
             text-align: center;
-            position: relative;
-            bottom: 1200px;
+
             overflow: hidden;
             
             }
@@ -685,8 +753,6 @@ margin: 20px auto;
                                 color: #606060;
                                 height: 100px;
                                 margin: 0 0;
-                                position: relative;
-                                bottom: 1200px;
                             
                                 }
                             
@@ -703,5 +769,76 @@ margin: 20px auto;
 
 }
 
+@media (max-width: 800px) {
+
+    #team-member {
+            
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow-y: hidden;
+        
+        
+        }
+        
+        #meet-the-team h1{
+        
+            font-size: 300%;
+            color: white;
+            margin-top: 10px;
+        
+            }
+            
+            #meet-the-team img {
+                margin-top: 50px;
+            }
+
+            #meet-the-team {
+               height: 1000px 
+            }
+
+            #footer {
+            height: 130px;    
+            }
+
+            #division-1 {
+            height: 3315px;
+            }
+          
+            #meet-the-team p {
+                display: block;
+                color: white;
+                font-size: 200%;
+                margin-top: 2vh;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
 
+        }
+
+
+
+        @media (max-width:607px) {
+        
+            #division-1 {
+                height: 3360px;
+            }   
+
+        } 
+
+        @media (max-width:464px) {
+        
+            #division-1 {
+                height: 3315px;
+            }   
+
+            #meet-the-team {
+                height: 1100px;
+            }
+
+
+        } 
+#team-member p{
+color: white;    
+}
